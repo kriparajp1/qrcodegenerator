@@ -7,7 +7,7 @@ app.use(express.json())
 app.use(express.urlencoded({extended:true}))
 
 app.use(cors())
-
+ 
 async function qrcodegenerator(text){
     const qr= await qrcode.toDataURL(text)
     console.log(qr)
